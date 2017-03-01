@@ -1,7 +1,7 @@
 # deep-freeze
 Just a small function to freeze the entire object avoiding mutability.
 
-#How to use
+#Use
 ```javascript
 import deepFreeze from 'index';
 
@@ -13,7 +13,7 @@ let person = {
 deepFreeze(person);
 ```
 
-#How to run tests
+#Test
 ```zsh
 npm t
 ```
