@@ -7,7 +7,7 @@ npm install deep-freezer
 ```
 
 ```javascript
-import deepFreeze from 'index';
+import deepFreeze from 'deep-freezer';
 
 let person = {
   firstName: 'name',
