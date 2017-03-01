@@ -1,5 +1,5 @@
 {
-  "name": "deep-freeze",
+  "name": "deep-freezer",
   "version": "1.0.0",
   "description": "Just a small function to freeze the entire object avoiding mutability",
   "main": "index.js",

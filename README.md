@@ -2,6 +2,10 @@
 Just a small function to freeze the entire object avoiding mutability.
 
 #Use
+```zsh
+npm install deep-freezer
+```
+
 ```javascript
 import deepFreeze from 'index';
 
