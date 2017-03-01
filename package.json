@@ -1,0 +1,37 @@
+{
+  "name": "deep-freeze",
+  "version": "1.0.0",
+  "description": "Just a small function to freeze the entire object avoiding mutability",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test --recursive --compilers js:babel-register --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdalla/deep-freeze.git"
+  },
+  "keywords": [
+    "freeze",
+    "deep",
+    "deepfreeze",
+    "mutability",
+    "immutability"
+  ],
+  "author": "Carlos Abdalla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdalla/deep-freeze/issues"
+  },
+  "homepage": "https://github.com/abdalla/deep-freeze#readme",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
