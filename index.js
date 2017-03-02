@@ -1,9 +1,9 @@
 'use strict'
 const deepFreeze = obj => {
-  var props = Object.getOwnPropertyNames(obj);
+  let props = Object.getOwnPropertyNames(obj);
 
   props.forEach(name => {
-    var prop = obj[name];
+    let prop = obj[name];
 
     if (typeof prop === 'object' && prop !== null)
       deepFreeze(prop);
