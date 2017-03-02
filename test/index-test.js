@@ -2,8 +2,6 @@ import deepFreeze from '../index';
 import { expect } from 'chai';
 
 describe('Deep Freeze', () => {
-
-
     it('should change the person', () => {
         let personBefore = {
           firstName: 'Joe',
@@ -18,7 +16,6 @@ describe('Deep Freeze', () => {
         try {
           personBefore.firstName = 'firstName';
         } catch(e){
-
         };
 
         expect(personBefore).to.not.deep.equal(personAfter);
@@ -40,7 +37,6 @@ describe('Deep Freeze', () => {
 
           personBefore.firstName = 'firstName';
         } catch(e){
-
         };
 
         expect(personBefore).to.deep.equal(personAfter);
