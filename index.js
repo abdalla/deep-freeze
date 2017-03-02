@@ -1,3 +1,5 @@
+'use strict'
+
 const deepFreeze = obj => {
 
   var props = Object.getOwnPropertyNames(obj);
