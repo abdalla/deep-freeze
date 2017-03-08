@@ -1,7 +1,7 @@
 # deep-freeze
 Just a small function to freeze the entire object avoiding mutability.
 
-#Use
+# Use
 ```zsh
 npm install deep-freezer
 ```
@@ -16,7 +16,7 @@ let person = {
 
 deepFreeze(person);
 ```
-#Handle Errors
+# Handle Errors
 To throw error when you try to mutate a frozen object, just use the deep-freezer in strict mode.
 
 ```javascript
@@ -32,10 +32,36 @@ let person = {
 deepFreeze(person);
 ```
 
-#Examples
+# Examples
 More examples could be find at example folder.
 
-#Test
+```javascript
+///Throwing Errors.
+'use strict'
+
+import deepFreeze from 'deep-freezer';
+
+let person = {
+  firstName: 'name',
+  lastName: 'lastName'
+};
+
+deepFreeze(person);
+```
+OR
+```javascript
+///Ignoring the errors, but still keeping the object frozen.
+import deepFreeze from 'deep-freezer';
+
+let person = {
+  firstName: 'name',
+  lastName: 'lastName'
+};
+
+deepFreeze(person);
+```
+
+# Test
 ```zsh
 npm t
 ```
