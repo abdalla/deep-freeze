@@ -46,6 +46,8 @@ let person = {
   lastName: 'lastName'
 };
 
+person.firstName = 'New Name'; //==> this line will throw an error.
+
 deepFreeze(person);
 ```
 OR
@@ -57,6 +59,8 @@ let person = {
   firstName: 'name',
   lastName: 'lastName'
 };
+
+person.firstName = 'New Name'; //==> this line will be ignored.
 
 deepFreeze(person);
 ```
